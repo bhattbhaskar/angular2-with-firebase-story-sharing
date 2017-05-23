@@ -1,0 +1,71 @@
+<!--
+<div *ngIf="error" class="alert alert-warning" role="alert">
+  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+  <span class="sr-only">Error:</span>
+  {{error}}
+</div>
+
+<div class="modal-dialog">
+  <div class="registermodal-container">
+    <h1>Register</h1><br>
+
+    <form class="form-signin" (submit)="register($event, name.value, email.value, password.value)">
+      <label for="name" class="sr-only">Name</label>
+      <input #name type="text" id="name" class="form-control" placeholder="Name" required="">
+      <label for="email" class="sr-only">Email address</label>
+      <input #email type="email" id="email" class="form-control" placeholder="Email address" required="" autofocus="">
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input #password type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+      <br>
+      <button  class="btn btn-md btn-primary btn-block" type="submit">Register</button>
+    </form>
+  </div>
+</div>
+-->
+<div class="pen-title">
+  <div class="row">
+  <div class="column-12">
+    <h2>Welcome!</h2>
+    <p>Log in to your existing account</p>
+    <div class="buttonGroup">
+      <button class="btn btn-primary btn-google">Google</button>
+    </div>
+    <h4>OR</h4>
+  </div>
+  </div>
+</div>  
+<div class="container active">
+  <div class="card"></div>
+  <div class="card"></div>
+  
+    <div class="card alt">
+    <div class="toggle"></div>
+     <h1 class="title">Register
+      <a class="register-link" [routerLink]="['/login']" >
+        <div class="close"></div>
+      </a>
+    </h1>
+    <form (submit)="register($event, name.value, email.value, password.value)">
+      <div class="input-container">
+        <input #name type="text" id="name"  required="required"/>
+        <label for="name">Name</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input #email type="email" id="email"  required="required"/>
+        <label for="email">Email</label>
+        <div class="bar"></div>
+      </div>
+      <div class="input-container">
+        <input #password type="password" id="inputPassword" required="required"/>
+        <label for="Password">Password</label>
+        <div class="bar"></div>
+      </div>
+      <div class="button-container">
+        <button type="submit"><span>Register</span></button>
+      </div>
+      
+    </form>
+  </div>
+
+  </div>

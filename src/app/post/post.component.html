@@ -1,0 +1,80 @@
+  <!-- Page Content -->
+    
+        <div class="row">
+
+            <!-- Blog Post Content Column -->
+            <div class="col-lg-8">
+
+                <!-- Blog Post -->
+
+                <!-- Title -->
+                <h1> {{ post_title }} </h1>
+
+                <!-- Author -->
+                <p class="lead">
+                    by <a href="#">{{ author }}</a>
+                </p>
+
+                <hr>
+
+                <!-- Date/Time -->
+                <p><span class="glyphicon glyphicon-time"></span> Posted on  {{ post_date | date }}</p>
+
+                <hr>
+
+                <!-- Preview Image -->
+                <img class="img-responsive" src="http://placehold.it/900x300" alt="">
+
+                <hr>
+
+                <!-- Post Content -->
+                <p class="lead">
+                	{{ post_body }}
+                </p>
+
+                <hr>      
+             
+
+            </div>
+
+            <!-- Blog Sidebar Widgets Column -->
+            <div class="col-md-4">
+                <!-- Blog Categories Well -->
+                <div class="well">
+                    <h4>Blog Categories</h4>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul class="list-unstyled">
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                                <li><a href="#">Category Name</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+  
+    <!-- /.container -->

@@ -1,0 +1,19 @@
+.header-box {
+	text-align:center;
+	background-color: #5DA0C6;
+	color: white;
+}
+h1 {
+	margin-top:6%;
+	margin-bottom:6%;
+}
+.p-purple {
+	color: #5DA0C6;
+}
+.font-22 {
+	font-size: 22px;
+}
+.img-link {
+	height: 30px;
+	width: 30px;
+}

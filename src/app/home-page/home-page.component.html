@@ -1,0 +1,56 @@
+<!--
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div #scrollMe class="bs-example" id="messages">
+        <div *ngFor="let message of messages | async">
+          <div class="bubble" [class.you]="isYou(message.email)" [class.me]="isMe(message.email)">
+            <p>{{ message.message }}</p>
+            <div class="author">
+              {{ message.displayName }} | {{ message.timestamp | date:"MM/dd/yy hh:mm a" }}
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <figure class="highlight">
+        <input type="textarea" class="message-text" [(ngModel)]="newMessage" (keyup.enter)="sendMessage()">
+        <a class="send-message" (click)="sendMessage()">SEND</a>
+      </figure>
+    </div>
+  </div>
+</div>
+-->
+  <div class="row">
+
+            <!-- Blog Entries Column -->
+            <div class="col-md-12">
+
+                 
+             <div class="row">
+                 <div class="col-md-12 col-xs-12 header-hox ">
+                    <h1>
+                         Stories that move with you.
+                    </h1>
+                    <p></p>
+                </div>
+            </div>    
+
+            <div class="blog-post"  *ngFor="let post of posts | async">
+                <!-- First Blog Post -->
+                <h2>
+                    <a class="blog-title" [routerLink]="['/post',post.$key]">{{ post.title }}</a>
+                </h2>
+                <p class="lead">
+                    by <span class="by-author">{{ post.displayName }}</span>
+                </p>
+                <p><span class="glyphicon glyphicon-time"></span> Posted on {{ post.timestamp | date }}</p>
+                <img class="img-responsive" src="https://unsplash.it/900/300/?random" alt="">
+                <p>{{ post.message | truncate : 150   }}</p>
+                <a class="btn btn-primary" [routerLink]="['/post',post.$key]">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
+                 <hr>
+            </div>
+             
+            </div>
+</div>
